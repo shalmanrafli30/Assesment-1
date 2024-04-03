@@ -106,7 +106,22 @@
         for (let i = 0; i < buku.length; i++) {
             if (buku[i].nama === pilihanBuku) {
                 bukuDitemukan = true;
+                let stokBuku = buku[i].jumlah;
+
+                if (jumlahBuku > stokBuku) {
+                    alert("Jumlah buku tidak tersedia!");
+                    return;
+                }
+
+                if (jumlahBuku <= stokBuku) {
+                    alert("Silahkan ambil buku anda");
+                    return;
+                }
             }
+        }
+
+        if (!bukuDitemukan) {
+            alert("Buku tidak ditemukan!");
         }
     }
 </script>
