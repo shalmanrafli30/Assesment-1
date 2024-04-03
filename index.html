@@ -87,14 +87,20 @@
     <script src="script.js"></script>
 </body>
 <script>
-    function ambilBuku() {
-
-    }
-
     let buku = [
         {"nama": "sherlock", "jumlah":2},
         {"nama": "lupin", "jumlah":2},
         {"nama": "aladin", "jumlah":2},
     ];
+
+    function ambilBuku() {
+        let jumlahBuku = document.getElementById("jumlah").value;
+        let pilihanBuku = document.getElementById("buku").value;
+
+        if (jumlahBuku === "") {
+            alert("Jumlah buku tidak boleh kosong!");
+            return;
+        }
+    }
 </script>
 </html>
