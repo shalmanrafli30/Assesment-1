@@ -33,6 +33,35 @@
         .profile .info {
             font-size: 18px;
         }
+
+        .form {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        
+        .form select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        
+        .form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -50,11 +79,16 @@
         <input type="number" id="jumlah" placeholder="Masukkan Jumlah Buku">
         <select id="buku">
             <option value="sherlock">Sherlock Holmes</option>
-            <option value="lupin">Lupin III</option>
-            <option value="aladin">Aladin dan Lampu Ajaib</option>
+            <option value="lupin">Lupin</option>
+            <option value="aladin">Aladin</option>
         </select>
         <button onclick="ambilBuku()">Ambil Buku</button>
     </div>
     <script src="script.js"></script>
 </body>
+<script>
+    function ambilBuku() {
+
+    }
+</script>
 </html>
