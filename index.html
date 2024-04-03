@@ -101,6 +101,13 @@
             alert("Jumlah buku tidak boleh kosong!");
             return;
         }
+
+        let bukuDitemukan = false;
+        for (let i = 0; i < buku.length; i++) {
+            if (buku[i].nama === pilihanBuku) {
+                bukuDitemukan = true;
+            }
+        }
     }
 </script>
 </html>
